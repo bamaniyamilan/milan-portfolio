@@ -18,9 +18,9 @@ const Skills = ({ darkMode }) => {
     {
       category: "Programming Languages",
       skills: [
-        { name: "Java", level: 90 },
-        { name: "Kotlin", level: 85 },
-        { name: "JavaScript", level: 88 }
+        { name: "Java", level: 75 },
+        { name: "Kotlin", level: 70 },
+        { name: "JavaScript", level: 90 }
       ]
     },
     {

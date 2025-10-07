@@ -156,57 +156,7 @@ const Education = ({ darkMode }) => {
       </div>
 
       {/* Additional Certifications Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-        style={{
-          ...cardStyle,
-          marginTop: isMobile ? '1.5rem' : '2rem'
-        }}
-      >
-        <h3 style={{ 
-          fontSize: isMobile ? '1.3rem' : '1.5rem', 
-          color: 'var(--text-primary)', 
-          marginBottom: isMobile ? '1rem' : '1.5rem',
-          borderBottom: `2px solid ${darkMode ? 'rgba(255,255,255,0.1)' : 'var(--border-color)'}`,
-          paddingBottom: '0.5rem'
-        }}>
-          Additional Certifications
-        </h3>
-        <div style={{ display: 'grid', gap: '0.75rem' }}>
-          <p style={{ 
-            color: 'var(--text-secondary)',
-            fontSize: isMobile ? '0.95rem' : '1rem',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem'
-          }}>
-            <span style={{ color: 'var(--primary-color)' }}>•</span>
-            Android Development Certification - Google Developers
-          </p>
-          <p style={{ 
-            color: 'var(--text-secondary)',
-            fontSize: isMobile ? '0.95rem' : '1rem',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem'
-          }}>
-            <span style={{ color: 'var(--primary-color)' }}>•</span>
-            React.js Professional Certificate - Meta
-          </p>
-          <p style={{ 
-            color: 'var(--text-secondary)',
-            fontSize: isMobile ? '0.95rem' : '1rem',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem'
-          }}>
-            <span style={{ color: 'var(--primary-color)' }}>•</span>
-            Full Stack Web Development - Udemy
-          </p>
-        </div>
-      </motion.div>
+      
     </motion.section>
   );
 };

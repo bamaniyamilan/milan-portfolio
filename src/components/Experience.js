@@ -19,8 +19,8 @@ const Experience = ({ darkMode }) => {
     {
       company: "Fliptree Technologies Private Limited (Remote)",
       position: "Jr. Android Developer",
-      period: "Sep. 2022 – Nov. 2022",
-      location: "Pune, India",
+      period: "Dec. 2022 – Feb. 2024",
+      location: "Charlotte, NC, USA",
       achievements: [
         "Developed Android applications using Kotlin, Jetpack Compose, and MVVM architecture",
         "Built and optimized web applications with React.js, Tailwind CSS, and Redux",
@@ -32,8 +32,8 @@ const Experience = ({ darkMode }) => {
     {
       company: "NeoSoft Technologies",
       position: "Software Engineer",
-      period: "Mar. 2022 – Jun. 2022",
-      location: "Ahmedabad, India",
+      period: "Sep. 2022 – Nov. 2022",
+      location: "Pune, India",
       achievements: [
         "Designed dynamic web applications using React.js, Material UI, and Tailwind CSS",
         "Implemented state management solutions with Redux, ensuring scalable architecture",
@@ -43,8 +43,8 @@ const Experience = ({ darkMode }) => {
     {
       company: "Charmuse Technologies Pvt Ltd",
       position: "Android Developer",
-      period: "Apr. 2020 – Mar. 2022",
-      location: "Vadodara, India",
+      period: "Mar. 2022 – Jun. 2022",
+      location: "Ahmedabad, India",
       achievements: [
         "Developed testable Android applications using Kotlin",
         "Debugged and enhanced application performance, reducing crash rates by 15%"

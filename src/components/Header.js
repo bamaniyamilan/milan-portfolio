@@ -662,7 +662,7 @@ const Header = ({ activeSection, setActiveSection, darkMode, setDarkMode, likeCo
             </motion.li>
 
             {/* Download Resume Button */}
-            <motion.li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            {/* <motion.li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <button
                 onClick={() => window.open('/resume.pdf', '_blank')}
                 style={{
@@ -682,7 +682,7 @@ const Header = ({ activeSection, setActiveSection, darkMode, setDarkMode, likeCo
                 <FaDownload />
                 Resume
               </button>
-            </motion.li>
+            </motion.li> */}
           </ul>
         </motion.nav>
       )}
@@ -773,7 +773,7 @@ const Header = ({ activeSection, setActiveSection, darkMode, setDarkMode, likeCo
                   <span>{likeCount}</span>
                 </motion.button>
 
-                <motion.button
+                {/* <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => window.open('/resume.pdf', '_blank')}
@@ -793,7 +793,7 @@ const Header = ({ activeSection, setActiveSection, darkMode, setDarkMode, likeCo
                 >
                   <FaDownload />
                   Resume
-                </motion.button>
+                </motion.button> */}
               </div>
             </div>
           </motion.nav>
