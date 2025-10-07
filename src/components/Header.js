@@ -142,43 +142,47 @@ const Header = ({ activeSection, setActiveSection, darkMode, setDarkMode, likeCo
           <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
             {/* Dark Mode Toggle */}
             <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setDarkMode(!darkMode)}
-              style={{
-                padding: '0.5rem',
-                background: darkMode ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.05)',
-                border: 'none',
-                borderRadius: '10px',
-                color: darkMode ? '#fbbf24' : '#f59e0b',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}
-            >
-              {darkMode ? <FaSun size={16} /> : <FaMoon size={16} />}
-            </motion.button>
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+  onClick={() => setDarkMode(!darkMode)}
+  style={{
+    padding: '0.5rem',
+    background: darkMode ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.05)',
+    border: 'none',
+    borderRadius: '10px',
+    color: darkMode ? '#fbbf24' : '#f59e0b',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 10,  // <-- add this
+    position: 'relative' // <-- also needed for z-index to work
+  }}
+>
+  {darkMode ? <FaSun size={16} /> : <FaMoon size={16} />}
+</motion.button>
 
-            {/* Mobile Menu Toggle */}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              style={{
-                padding: '0.5rem',
-                background: darkMode ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.05)',
-                border: 'none',
-                borderRadius: '10px',
-                color: textColor,
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}
-            >
-              {mobileMenuOpen ? <FaTimes size={16} /> : <FaBars size={16} />}
-            </motion.button>
+<motion.button
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+  style={{
+    padding: '0.5rem',
+    background: darkMode ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.05)',
+    border: 'none',
+    borderRadius: '10px',
+    color: textColor,
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative', // required for z-index
+    zIndex: 10,           // make sure it's above other elements
+  }}
+>
+  {mobileMenuOpen ? <FaTimes size={16} /> : <FaBars size={16} />}
+</motion.button>
+
           </div>
         </div>
       )}
@@ -279,7 +283,7 @@ const Header = ({ activeSection, setActiveSection, darkMode, setDarkMode, likeCo
           width: '120px',
           height: '120px',
           borderRadius: '50%',
-          background: `url(${process.env.PUBLIC_URL + '/assets/profile.jpg'}) center/cover`,
+          background: `url(${process.env.PUBLIC_URL + profileImage}) center/cover`,
           border: '3px solid white',
           boxShadow: '0 8px 25px rgba(0, 0, 0, 0.2)',
           display: 'flex',
