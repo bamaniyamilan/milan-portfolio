@@ -211,7 +211,10 @@ const Header = ({ activeSection, setActiveSection, darkMode, setDarkMode, likeCo
           width: '180px',
           height: '180px',
           borderRadius: '50%',
-          background: `url(${process.env.PUBLIC_URL + profileImage}) center/cover`,
+          backgroundImage: `url(${process.env.PUBLIC_URL + profileImage})`,
+          backgroundPosition: 'center top', // <-- top-center
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
           border: '4px solid white',
           boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
           display: 'flex',
@@ -280,12 +283,15 @@ const Header = ({ activeSection, setActiveSection, darkMode, setDarkMode, likeCo
       <div 
         className="profile-image"
         style={{
-          width: '120px',
-          height: '120px',
+          width: '180px',
+          height: '180px',
           borderRadius: '50%',
-          background: `url(${process.env.PUBLIC_URL + profileImage}) center/cover`,
-          border: '3px solid white',
-          boxShadow: '0 8px 25px rgba(0, 0, 0, 0.2)',
+          backgroundImage: `url(${process.env.PUBLIC_URL + profileImage})`,
+          backgroundPosition: 'center top', // <-- top-center
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          border: '4px solid white',
+          boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
