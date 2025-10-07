@@ -176,7 +176,7 @@ const Contact = ({ darkMode }) => {
                   fontWeight: '600',
                   fontSize: isMobile ? '0.95rem' : '1rem'
                 }}>
-                  +91 8156959396
+                  +91 8156050306
                 </p>
               </div>
             </motion.div>

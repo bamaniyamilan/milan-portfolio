@@ -463,7 +463,7 @@ const Header = ({ activeSection, setActiveSection, darkMode, setDarkMode, likeCo
         width: isMobile ? '100%' : 'auto'
       }}>
         <motion.a 
-          href="tel:+918156959396"
+          href="tel:+918156050306"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           style={{
