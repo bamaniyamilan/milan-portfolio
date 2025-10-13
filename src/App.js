@@ -23,6 +23,17 @@ const FloatingWidget = ({ darkMode, likeCount, onLike, hasLiked }) => {
     localStorage.setItem('visitorCount', (count + 1).toString());
   }, []);
 
+   useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+      document.body.style.backgroundColor = '#0f172a';
+    } else {
+      document.body.classList.remove('dark-mode');
+      document.body.style.backgroundColor = '#ffffff';
+    }
+  }, [darkMode]);
+
+  
   const createHeart = () => {
     const newHeart = {
       id: Date.now(),
@@ -412,9 +423,8 @@ function App() {
     }
   };
 
-  return (
-    <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
-      <Header 
+    return (
+ <div className={`App ${darkMode ? 'dark-mode' : ''}`}>      <Header 
         activeSection={activeSection} 
         setActiveSection={setActiveSection}
         darkMode={darkMode}
